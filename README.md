@@ -1,19 +1,14 @@
-                    USER
-                      │
-                      ▼
-             News Headline / Article
-                      │
-                      ▼
-             Text Preprocessing
-                      │
-          ┌───────────┼────────────┐
-          ▼           ▼            ▼
-     Category      Sentiment    Summary
-   Transformer    Transformer   Transformer
-          │           │            │
-          └───────────┼────────────┘
-                      ▼
-               Risk Analysis
-                      │
-                      ▼
-             Result Dashboard
+                 USER
+                   │
+                   ▼
+          News Article / Headline
+                   │
+                   ▼
+           Text Preprocessing
+                   │
+          ┌────────┼─────────┐
+          │        │         │
+          ▼        ▼         ▼
+      BART      DistilBERT  Keywords
+   Classification + Sentiment + Extraction =  DistilBART Summarizer ->  Linguistic Risk Indicator ->  AI REPORT ->  Gradio UI
+         
